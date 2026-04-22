@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login Page</title>
+
+```
+<style>
+    body {
+        background-color: #e6f0ff;
+        font-family: Arial;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .box {
+        background: white;
+        padding: 25px;
+        width: 300px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+    }
+
+    h2 {
+        color: #0066cc;
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    button {
+        padding: 10px;
+        width: 100px;
+        background: #0066cc;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #004080;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="box">
+    <h2>LOGIN SYSTEM</h2>
+
+```
+<input type="text" id="user" placeholder="Username"><br>
+
+<input type="password" id="pass" placeholder="Password"><br>
+
+<button onclick="login()">LOGIN</button>
+```
+
+</div>
+
+<script>
+function login() {
+    var u = document.getElementById("user").value;
+    var p = document.getElementById("pass").value;
+
+    if (u === "admin" && p === "1234") {
+        alert("Login Successful ✅");
+    } else {
+        alert("Invalid Credentials ❌");
+    }
+}
+</script>
+
+</body>
+</html>
